@@ -1,0 +1,2255 @@
+DEBUG - 2025-09-11 03:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 05:23:26 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:16 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:19 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:19 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:19 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:19 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:19 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:20 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:21 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:29:21 --> ErrorException: Undefined array key "inpudate"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 29.
+ 1 APPPATH\Views\boards\list.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inpudate"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(21): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:40:47 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->makeLinks(1, 10, 124, 'bootstrap_full', 10)
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:40:53 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "10"
+[Method: GET, Route: board/list]
+in SYSTEMPATH\HTTP\URI.php on line 606.
+ 1 SYSTEMPATH\HTTP\URI.php(606): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(10)
+ 2 SYSTEMPATH\Pager\Pager.php(276): CodeIgniter\HTTP\URI->setSegment(10, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(323): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(374): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(127): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->makeLinks(1, 10, 124, 'default_full', 10)
+ 8 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+11 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:42:56 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "10"
+[Method: GET, Route: board/list]
+in SYSTEMPATH\HTTP\URI.php on line 606.
+ 1 SYSTEMPATH\HTTP\URI.php(606): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(10)
+ 2 SYSTEMPATH\Pager\Pager.php(276): CodeIgniter\HTTP\URI->setSegment(10, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(323): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(374): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(127): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->makeLinks(1, 10, 124, 'default_full', 10)
+ 8 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+11 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:45:05 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:45:06 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:45:06 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:45:06 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 05:46:13 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_full" is not a valid Pager template.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_full')
+ 3 APPPATH\Views\boards\list.php(39): CodeIgniter\Pager\Pager->links('default', 'bootstrap_full')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 7 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 06:36:03 --> mysqli_sql_exception: Unknown table 'mysite.posts' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `posts`....', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(10, 20)
+#6 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1281): CodeIgniter\BaseModel->findAll(10, 20)
+#7 D:\php\ci4\app\Models\BoardModel.php(55): CodeIgniter\BaseModel->paginate(10)
+#8 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#16 {main}
+CRITICAL - 2025-09-11 06:36:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'mysite.posts'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(10, 20)
+ 4 SYSTEMPATH\BaseModel.php(1281): CodeIgniter\BaseModel->findAll(10, 20)
+ 5 APPPATH\Models\BoardModel.php(55): CodeIgniter\BaseModel->paginate(10)
+ 6 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 06:36:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'mysite.posts'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(10, 20)
+ 6 SYSTEMPATH\BaseModel.php(1281): CodeIgniter\BaseModel->findAll(10, 20)
+ 7 APPPATH\Models\BoardModel.php(55): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 06:36:03 --> [Caused by] mysqli_sql_exception: Unknown table 'mysite.posts'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nickname`
+FROM `boards`
+JOIN `users` ON `users`.`id` = `boards`.`users`
+ORDER BY `boards`.`id` DESC
+ LIMIT 20, 10', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(10, 20)
+ 7 SYSTEMPATH\BaseModel.php(1281): CodeIgniter\BaseModel->findAll(10, 20)
+ 8 APPPATH\Models\BoardModel.php(55): CodeIgniter\BaseModel->paginate(10)
+ 9 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 07:37:59 --> ErrorException: Undefined array key "cmcnt"
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 25.
+ 1 APPPATH\Views\boards\list.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cmcnt"', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 08:48:17 --> mysqli_sql_exception: Unknown column 'a.id' in 'on clause' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 08:48:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.id' in 'on clause'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:17 --> [Caused by] mysqli_sql_exception: Unknown column 'a.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 08:48:34 --> mysqli_sql_exception: Unknown column 'a.id' in 'group statement' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 08:48:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.id' in 'group statement'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.id' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:34 --> [Caused by] mysqli_sql_exception: Unknown column 'a.id' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 08:48:42 --> mysqli_sql_exception: Unknown column 'a.title' in 'group statement' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 08:48:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.title' in 'group statement'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.title' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:48:42 --> [Caused by] mysqli_sql_exception: Unknown column 'a.title' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `b`.`id`, `b`.`title`, `b`.`viewcount`, `b`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT bc.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` as `b`)
+JOIN `users` as `u` ON `u`.`id` = `b`.`users`
+LEFT JOIN `boardCmts` as `bc` ON `bc`.`board` = `b`.`id`
+LEFT JOIN `board_ucnts` `c` ON `b`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `b`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `b`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(68): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:53:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 68.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:53:47 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 68.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 08:53:47 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 68.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:10:45 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 85.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:10:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 85.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:10:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 85.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 09:13:53 --> mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 09:13:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:53 --> [Caused by] mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 09:13:54 --> mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 09:13:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:54 --> [Caused by] mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 09:13:55 --> mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 09:13:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:55 --> [Caused by] mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+ERROR - 2025-09-11 09:13:55 --> mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause' in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-11 09:13:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 5 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 7 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:13:55 --> [Caused by] mysqli_sql_exception: Unknown column 'b.boardmaster' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = 10
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM (`boards`, `boards` `a`)
+JOIN `users` `u` ON `a`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `a`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `a`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `a`.`id` = `d`.`board`
+WHERE `b`.`boardmaster` = :b.boardmaster:
+GROUP BY `a`.`id`, `a`.`title`, `a`.`viewcount`, `a`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\BoardModel.php(69): CodeIgniter\BaseModel->paginate(10)
+ 8 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:41:57 --> ErrorException: Undefined variable $db
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 2.
+ 1 APPPATH\Views\boards\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:41:58 --> ErrorException: Undefined variable $db
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 2.
+ 1 APPPATH\Views\boards\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:41:58 --> ErrorException: Undefined variable $db
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 2.
+ 1 APPPATH\Views\boards\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:41:58 --> ErrorException: Undefined variable $db
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 2.
+ 1 APPPATH\Views\boards\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:41:59 --> ErrorException: Undefined variable $db
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 2.
+ 1 APPPATH\Views\boards\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(23): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:43:38 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:43:38 --> ArgumentCountError: Too few arguments to function App\Models\BoardModel::getBoardsWithUser(), 1 passed in D:\php\ci4\app\Controllers\Board.php on line 21 and exactly 2 expected
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 0.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:43:40 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:43:40 --> ArgumentCountError: Too few arguments to function App\Models\BoardModel::getBoardsWithUser(), 1 passed in D:\php\ci4\app\Controllers\Board.php on line 21 and exactly 2 expected
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 0.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:43:40 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:43:40 --> ArgumentCountError: Too few arguments to function App\Models\BoardModel::getBoardsWithUser(), 1 passed in D:\php\ci4\app\Controllers\Board.php on line 21 and exactly 2 expected
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 0.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:43:40 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:43:40 --> ArgumentCountError: Too few arguments to function App\Models\BoardModel::getBoardsWithUser(), 1 passed in D:\php\ci4\app\Controllers\Board.php on line 21 and exactly 2 expected
+[Method: GET, Route: board/list]
+in APPPATH\Models\BoardModel.php on line 0.
+ 1 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:44:33 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+WARNING - 2025-09-11 09:44:34 --> [DEPRECATED] Optional parameter $boardmaster declared before required parameter $limit is implicitly treated as a required parameter in APPPATH\Models\BoardModel.php on line 50.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include('D:\\php\\ci4\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\php\\ci4\\vendor\\composer/../../app\\Models\\BoardModel.php')
+ 3 APPPATH\Controllers\Board.php(18): Composer\Autoload\ClassLoader->loadClass('App\\Models\\BoardModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:48:07 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\BoardModel". This is a method of the Query Builder Class.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Model.php on line 943.
+ 1 SYSTEMPATH\Model.php(943): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\BoardModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(923): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\BoardModel.php(69): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:48:08 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\BoardModel". This is a method of the Query Builder Class.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Model.php on line 943.
+ 1 SYSTEMPATH\Model.php(943): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\BoardModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(923): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\BoardModel.php(69): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 09:48:08 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\BoardModel". This is a method of the Query Builder Class.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Model.php on line 943.
+ 1 SYSTEMPATH\Model.php(943): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\BoardModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(923): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\BoardModel.php(69): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 11:02:49 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\BoardModel". This is a method of the Query Builder Class.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Model.php on line 943.
+ 1 SYSTEMPATH\Model.php(943): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\BoardModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(923): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\BoardModel.php(69): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-11 11:02:51 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\BoardModel". This is a method of the Query Builder Class.
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Model.php on line 943.
+ 1 SYSTEMPATH\Model.php(943): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\BoardModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(923): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\BoardModel.php(69): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 13:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 13:21:39 --> ErrorException: Undefined variable $session
+[Method: GET, Route: board/list]
+in APPPATH\Views\boards\list.php on line 46.
+ 1 APPPATH\Views\boards\list.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'D:\\php\\ci4\\app\\Views\\boards\\list.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\list.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/list', [], true)
+ 5 APPPATH\Controllers\Board.php(22): view('/boards/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 13:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 13:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 14:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:08:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "126&page=1"
+[Method: GET, Route: board/view/126&page=1]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('board/view/126&page=1')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('board/view/126&page=1')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:08:38 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 8.
+ 1 APPPATH\Views\boards\view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(31): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:09:51 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 8.
+ 1 APPPATH\Views\boards\view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(31): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:09:52 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 8.
+ 1 APPPATH\Views\boards\view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(31): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:09:52 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 8.
+ 1 APPPATH\Views\boards\view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(31): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 15:09:52 --> ErrorException: Undefined array key "nickname"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 8.
+ 1 APPPATH\Views\boards\view.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nickname"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(31): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 15:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 15:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:23:54 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BoardModel::getPostWithUser_row
+[Method: GET, Route: board/view/126]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Board.php(27): CodeIgniter\Model->__call('getPostWithUser_row', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:09 --> ErrorException: Undefined array key "contents"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 14.
+ 1 APPPATH\Views\boards\view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contents"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:10 --> ErrorException: Undefined array key "contents"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 14.
+ 1 APPPATH\Views\boards\view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contents"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:10 --> ErrorException: Undefined array key "contents"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 14.
+ 1 APPPATH\Views\boards\view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contents"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:11 --> ErrorException: Undefined array key "contents"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 14.
+ 1 APPPATH\Views\boards\view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contents"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:47 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:48 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:48 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:49 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:49 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:49 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:49 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:49 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:50 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:50 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 16:31:50 --> ErrorException: Undefined array key "users"
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 25.
+ 1 APPPATH\Views\boards\view.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "users"', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(32): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 16:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-11 17:53:49 --> ErrorException: Undefined variable $disabled
+[Method: GET, Route: board/view/126]
+in APPPATH\Views\boards\view.php on line 53.
+ 1 APPPATH\Views\boards\view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disabled', 'D:\\php\\ci4\\app\\Views\\boards\\view.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\php\\ci4\\app\\Views\\boards\\view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('/boards/view', [], true)
+ 5 APPPATH\Controllers\Board.php(36): view('/boards/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->view('126')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-11 17:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 17:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-11 18:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

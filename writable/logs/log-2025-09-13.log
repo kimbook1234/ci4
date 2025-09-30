@@ -1,0 +1,463 @@
+ERROR - 2025-09-13 01:31:19 --> Error connecting to the database: mysqli_sql_exception: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'kimjjw', Object(SensitiveParameterValue), 'mysite', 3306, '', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#6 D:\php\ci4\app\Models\BoardModel.php(67): CodeIgniter\BaseModel->paginate(10)
+#7 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+#5 D:\php\ci4\app\Models\BoardModel.php(67): CodeIgniter\BaseModel->paginate(10)
+#6 D:\php\ci4\app\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+#7 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->list()
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#14 {main}
+CRITICAL - 2025-09-13 01:31:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[Method: GET, Route: board/list]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `boards`.`id`, `boards`.`title`, `boards`.`viewcount`, `boards`.`inputdate`, `u`.`nickname`, COUNT(DISTINCT b.id) as cmcnt, COUNT(c.id) AS upcnt, COUNT(d.id) AS downcnt
+FROM `boards`
+JOIN `users` `u` ON `boards`.`users` = `u`.`id`
+LEFT JOIN `boardCmts` `b` ON `boards`.`id` = `b`.`board`
+LEFT JOIN `board_ucnts` `c` ON `boards`.`id` = `c`.`board`
+LEFT JOIN `board_dcnts` `d` ON `boards`.`id` = `d`.`board`
+WHERE `boards`.`boardmaster` = :boards.boardmaster:
+GROUP BY `boards`.`id`, `boards`.`title`, `boards`.`viewcount`, `boards`.`inputdate`, `u`.`nickname`
+) CI_count_all_results', [...], false)
+ 3 SYSTEMPATH\Model.php(675): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1277): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Models\BoardModel.php(67): CodeIgniter\BaseModel->paginate(10)
+ 6 APPPATH\Controllers\Board.php(21): App\Models\BoardModel->getBoardsWithUser(1, 10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->list()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 01:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 01:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 02:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 02:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 03:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 05:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 06:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-13 07:04:48 --> Error: Call to a member function isValid() on null
+[Method: GET, Route: json/upload]
+in APPPATH\Controllers\Json.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Json->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Json))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 07:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-13 07:09:27 --> Error: Call to a member function isValid() on null
+[Method: GET, Route: json/upload]
+in APPPATH\Controllers\Json.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Json->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Json))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 07:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-13 07:15:50 --> Error: Call to a member function isValid() on null
+[Method: GET, Route: json/upload]
+in APPPATH\Controllers\Json.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Json->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Json))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 07:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-13 07:33:43 --> Error: Call to a member function isValid() on null
+[Method: GET, Route: json/upload]
+in APPPATH\Controllers\Json.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Json->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Json))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 07:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 07:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 09:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 09:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 09:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 09:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 09:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 14:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-13 14:22:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bo...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\php\ci4\app\Controllers\Board.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->writePro()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-13 14:22:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: POST, Route: board/writePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 14:22:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:22:43\', \'2025-09-13 14:22:43\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:22:43\', \'2025-09-13 14:22:43\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 14:22:43 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:22:43\', \'2025-09-13 14:22:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:22:43\', \'2025-09-13 14:22:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:22:43\', \'2025-09-13 14:22:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 14:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-13 14:24:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bo...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\php\ci4\app\Controllers\Board.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->writePro()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-13 14:24:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: POST, Route: board/writePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 14:24:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:24:39\', \'2025-09-13 14:24:39\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:24:39\', \'2025-09-13 14:24:39\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 14:24:39 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:24:39\', \'2025-09-13 14:24:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:24:39\', \'2025-09-13 14:24:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757773342_574888eea3786724e1bd.jpg\\" contenteditable=\\"false\\"><br></p><p><br></p><p><img src=\\"http://localhost:8080/upload/images/1757773357_f9808b230dbdc4d51b84.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 14:24:39\', \'2025-09-13 14:24:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 15:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-13 15:10:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bo...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\php\ci4\app\Controllers\Board.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->writePro()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-13 15:10:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: POST, Route: board/writePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 15:10:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757776200_0350b60b0e8eb33178f4.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757776205_6eced5ad78a6225ac957.webp\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 15:10:08\', \'2025-09-13 15:10:08\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757776200_0350b60b0e8eb33178f4.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757776205_6eced5ad78a6225ac957.webp\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 15:10:08\', \'2025-09-13 15:10:08\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 15:10:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757776200_0350b60b0e8eb33178f4.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757776205_6eced5ad78a6225ac957.webp\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 15:10:08\', \'2025-09-13 15:10:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757776200_0350b60b0e8eb33178f4.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757776205_6eced5ad78a6225ac957.webp\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 15:10:08\', \'2025-09-13 15:10:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'테스트입력입니다 -  첨부 이미지가 테이블에 저장됩니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757776200_0350b60b0e8eb33178f4.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757776205_6eced5ad78a6225ac957.webp\\" contenteditable=\\"false\\"><br></p>\', \'\', \'\', NULL, \'2025-09-13 15:10:08\', \'2025-09-13 15:10:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 15:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-13 15:24:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\php\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bo...', 0)
+#1 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 D:\php\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\php\ci4\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\php\ci4\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\php\ci4\app\Controllers\Board.php(84): CodeIgniter\Model->insert(Array)
+#8 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Board->writePro()
+#9 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+#10 D:\php\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\php\ci4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\php\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\php\ci4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\php\\ci4\\publ...')
+#15 {main}
+CRITICAL - 2025-09-13 15:24:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: POST, Route: board/writePro]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 15:24:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'이미지첨부 테스트입니다 CI4 금방 만드네요- 역시 프레임워크가 좋습니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757777063_8ffcc74c9df076bbc07b.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757777074_099b42b988d044320f1c.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'kjw9979\', NULL, \'2025-09-13 15:24:38\', \'2025-09-13 15:24:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'이미지첨부 테스트입니다 CI4 금방 만드네요- 역시 프레임워크가 좋습니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757777063_8ffcc74c9df076bbc07b.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757777074_099b42b988d044320f1c.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'kjw9979\', NULL, \'2025-09-13 15:24:38\', \'2025-09-13 15:24:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+CRITICAL - 2025-09-13 15:24:38 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mysite`.`boards`, CONSTRAINT `FK_board_users` FOREIGN KEY (`users`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'이미지첨부 테스트입니다 CI4 금방 만드네요- 역시 프레임워크가 좋습니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757777063_8ffcc74c9df076bbc07b.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757777074_099b42b988d044320f1c.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'kjw9979\', NULL, \'2025-09-13 15:24:38\', \'2025-09-13 15:24:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'이미지첨부 테스트입니다 CI4 금방 만드네요- 역시 프레임워크가 좋습니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757777063_8ffcc74c9df076bbc07b.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757777074_099b42b988d044320f1c.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'kjw9979\', NULL, \'2025-09-13 15:24:38\', \'2025-09-13 15:24:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (\'이미지첨부 테스트입니다 CI4 금방 만드네요- 역시 프레임워크가 좋습니다\', \'<p><img src=\\"http://localhost:8080/upload/images/1757777063_8ffcc74c9df076bbc07b.webp\\" contenteditable=\\"false\\"><img src=\\"http://localhost:8080/upload/images/1757777074_099b42b988d044320f1c.jpg\\" contenteditable=\\"false\\"><br></p>\', \'\', \'kjw9979\', NULL, \'2025-09-13 15:24:38\', \'2025-09-13 15:24:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boards` (`title`, `contents`, `tag`, `users`, `boardmaster`, `inputdate`, `modifydate`) VALUES (:title:, :contents:, :tag:, :users:, :boardmaster:, :inputdate:, :modifydate:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Board.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Board->writePro()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Board))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\php\\ci4\\public\\index.php')
+DEBUG - 2025-09-13 15:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-13 15:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

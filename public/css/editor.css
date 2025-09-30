@@ -1,0 +1,6 @@
+/* 보기 페이지 본문 스타일 */
+.toastui-editor-contents p {
+	margin: 0 ;
+	line-height: 0.8 ;
+	font-size: 16px ;
+}

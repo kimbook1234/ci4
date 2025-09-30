@@ -1,0 +1,204 @@
+/*a {text-decoration: none; color: inherit;}*/
+
+* {font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans KR', sans-serif;}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #f7f8fa;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+button { font-weight:500 }
+/* 헤더 */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #2d3748;
+	color: white;
+	height: 70px;
+	padding: 0 20px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+header .logo { font-weight: bold; font-size: 20px; line-height: 1; }
+
+/* 메뉴 가운데 */
+
+header nav {
+	position: absolute;
+	left: calc((100% - 950px)/2 + 5px); /* 컨텐츠 박스 왼쪽 시작점 */
+	transform: none; /* 중앙 이동 없앰 */
+	display: flex;
+	gap: 10px;
+}
+
+header nav button {
+	background: transparent;
+	border: none;
+	color: white;
+	padding: 10px 14px;
+	cursor: pointer;
+	font-size: 16px;
+}
+header nav button.active {
+	background: #4a5568;
+	border-radius: 4px;
+}
+
+/* 로그인/회원가입 버튼 스타일 */
+header .authButtons {
+	position: absolute;
+	right: calc((100% - 940px)/2); /* main 폭 기준 오른쪽 끝 */
+	display: flex;
+	gap: 10px;
+}
+
+header .authButtons button {
+	padding: 8px 16px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+header .authButtons .loginBtn {
+	background: #4a5568;
+	color: white;
+}
+
+header .authButtons .signupBtn {
+	background: #edf2f7;
+	color: #2d3748;
+	border: 1px solid #cbd5e0;
+	transition: background 0.2s ease;
+}
+
+header .authButtons .signupBtn:hover {
+	background: #d3e0eb;
+}
+
+
+/* 레이아웃 본체 */
+.layout {
+	flex: 1;
+	display: flex;
+	max-width: 1450px;
+	margin: 0 auto;
+	width: 100%;
+	background: #f7f8fa; /* 회원가입 페이지 배경색 */
+	/* flex gap 대신 main padding으로 간격 조정 */
+}
+
+/* 사이드바 */
+aside {
+	width: 200px; /* 폭 유지 */
+	padding: 15px; /* 내부 여백 유지 */
+	background: transparent;
+	border-left: 1px solid #e2e8f0;
+	border-right: 1px solid #e2e8f0;
+}
+
+/* 메인 콘텐츠 */
+main {
+	flex: 1;
+	padding: 20px 10px 20px 10px; /* 좌측 패딩 절반으로 줄여서 사이드바 간격 반으로 */
+	min-height: calc(100vh - 70px - 150px);
+	background: transparent;
+}
+main > div {
+	background: #fff;
+}
+
+
+/* 푸터 */
+footer {
+	height: 150px;
+	background: #fff;
+	border-top: 1px solid #e2e8f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #555;
+}
+
+/* 반응형: 태블릿 이하에서 좌우 사이드바 숨김 */
+@media (max-width: 1024px) {
+	aside { display: none; }
+}
+
+/* 테이블 반응형 */
+@media (max-width: 768px) {
+	table thead th:nth-child(2),
+	table thead th:nth-child(3),
+	table thead th:nth-child(4),
+	table thead th:nth-child(5),
+	table tbody td:nth-child(2),
+	table tbody td:nth-child(3),
+	table tbody td:nth-child(4),
+	table tbody td:nth-child(5) {
+		display: none;
+	}
+}
+
+.primaryBtn {
+	background: #4a6cf7;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 25px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+.primaryBtn:hover { background: #3b5bdb; }
+.repfont2 {font-size:12px; color:#e83345;cursor:pointer}
+
+
+/* 페이징 스타일시트*/
+.pagination {
+    display: flex;             /* 가로 배치 */
+    justify-content: center;   /* 가운데 정렬 */
+    list-style: none;          /* 점 제거 */
+    padding: 0;
+}
+
+/*********************/
+/* 각 페이지 번호 */
+/*********************/
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+}
+
+/* 현재 페이지 강조 */
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* 이전/다음/첫/마지막 버튼 강조 (원하면 스타일 변경 가능) */
+.pagination li a:hover {
+    background-color: #e9ecef;
+}
+
+/* 오른쪽 점(...) 제거 */
+.pagination li.disabled span {
+    display: none;
+}
