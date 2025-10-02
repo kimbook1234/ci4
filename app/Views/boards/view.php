@@ -190,7 +190,7 @@ $(function() {
 	$("#bookmark").on("click", function(e) {
 		let v = $(this).data("val"); //id
 		//mode : 북마크 설정/취소 구분
-		fetch("/json/bookmark?id=" + v)
+		fetch(`/json/bookmark?id=${v}`)
 		.then(response => response.json())
 		.then(json => {
 			if(json.errorflag == "u") { //로그인 정보 없음
@@ -224,7 +224,7 @@ $(function() {
 		let v1 = $(this).data("val1"); //id
 		let v2 = $(this).data("val2"); //구분
 
-		fetch("/json/recommend?id=" + v1 + "&mode=" + v2)
+		fetch(`/json/recommend?id=${v1}&mode=${v2}`)
 		.then(response => response.json())
 		.then(json => {
 			if(json.errorflag == "u") { //로그인 정보 없음
