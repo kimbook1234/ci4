@@ -3,7 +3,7 @@ composer.lock
 
 /writable/cache/*
 /writable/logs/*
-/writable/logs/*
-
+/writable/session/*
 /writable/debugbar/*
+
 !writable/debugbar/index.html
