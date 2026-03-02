@@ -4,10 +4,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-#('url', '컨트롤러 클래스::메소드', [필터])
+# ('url', '컨트롤러 클래스::메소드', [필터])
 # get/post 구분 확인하기
-#$routes->get('/', 'Home::index');
 
+# $routes->get('/', 'Home::index');
 $routes->get('/', 'Board::list');
 
 #로그인/아웃

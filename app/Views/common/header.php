@@ -35,7 +35,7 @@
 </head>
 <body>
 	<header>
-	    <div class="logo">BOOKPEN</div>
+	    <div class="logo">로컬 CI4</div>
 	    <nav id="mainMenu" >
 		   <a href="/board/list?boardmaster=1"><button data-menu="dashboard" class="active">게사판</button></a>
 		   <!--<button data-menu="content">콘텐츠</button>
