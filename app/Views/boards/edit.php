@@ -9,20 +9,30 @@
 	font-weight: bold;
 }
 </style>
-<form method="post" action="/board/writePro?<?= $url?>" id="wform">
+<form method="post" action="<?= route_to('board.update', $id) . '?' . http_build_query($_GET) ?>" id="wform">
 <?= csrf_field() ?>
-<input type="hidden" name="id" value="<?= $id ?? ''?>">
+<input type="hidden" name="_method" value="PUT">
 <input type="hidden" name="users" value="<?= $rs['users'] ?? ''?>">
 <div style="max-width:900px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
-    <h2 style="margin-bottom:20px;">게시글 작성</h2>
+    <h2 style="margin-bottom:20px;"><?= $boardname?></h2>
     <div style="margin-bottom:15px;">
         <label for="postTitle" style="display:block; margin-bottom:5px; font-weight:500;">제목</label>
         <input type="text"  name="title" id="title" value="<?= esc($rs['title'] ?? '')?>" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:14px; box-sizing:border-box;">
     </div>
     <div style="margin-bottom:15px;">
-        <label for="postTags" style="display:block; margin-bottom:5px; font-weight:500;">태그 (쉼표로 구분)</label>
+        <label for="postTags" style="display:block; margin-bottom:5px; font-weight:500;">태그(카테고리)</label>
         <input type="text" name="tag" id="tag" value="<?= esc($rs['tag'] ?? '')?>" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:14px; box-sizing:border-box;">
     </div>
+    <div style="margin-bottom:15px;">
+        <select name="category" id="category" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:14px; box-sizing:border-box;">
+			<option value="">- 태그 카테고리를 선택해주세요 -</option>
+			<?php if(!empty($boardtagData) && is_array($boardtagData)):?>
+				<?php foreach($boardtagData as $bt): ?>
+					<option value="<?= esc($bt['tag']) ?>" <?= $bt['tag'] == $rs['tag'] ? 'selected': "" ?>><?= esc($bt['tag']) ?></option>
+				<?php endforeach ?>	
+			<?php endif ?>		
+		</select>
+    </div>		
     <div style="margin-bottom:15px;">
         <label for="postContent" style="display:block; margin-bottom:5px; font-weight:500;">내용</label>
 		<div id="editor" class="toastui-editor-contents" style="width:100%;height:500px;"></div>
@@ -89,6 +99,14 @@ $(function() { //문서가 준비 되면 실행
 			e.preventDefault();		
 			return false;
 		}
+
+		if (!$.trim($("#tag").val())) {
+			$("#writemsgbox").text("태그 카테고리를 입력해주세요");
+			$("#tag").focus();
+			e.preventDefault();		
+			return false;
+		}
+
 		$("#contents").val(editor.getHTML().trim());
 		if (!$.trim($("#contents").val()) || $.trim($("#contents").val()) == "<p><br></p>") { 
 			$("#writemsgbox").text("내용을 입력해주세요");
@@ -156,6 +174,11 @@ $(function() { //문서가 준비 되면 실행
 		});
 		uploadedImages = currentImages;
 	});
+
+	$("#category").on("change", function() {
+		if ($(this).val()) 	$("#tag").val($(this).val());   // jQuery 방식
+	});
+
 });
 
 //-->

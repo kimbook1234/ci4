@@ -8,6 +8,8 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use App\Models\BoardmasterModel;
+use App\Models\BoardModel;
 
 /**
  * Class BaseController
@@ -46,6 +48,10 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+
+    protected $boardMasterData = [];
+    protected $boardtagData = [];
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
@@ -54,5 +60,13 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+
+        #게시판 마스터 데이터 로드(전역데이터 바인딩)
+        $boardmasterModel = new BoardmasterModel(); 
+        $this->boardMasterData = $boardmasterModel->getBoardmasters();
+
+        $boardModel = new BoardModel();
+        $this->boardtagData = $boardModel->getBoard_categories(service('request')->getGet('boardmaster') ?? 1);
+
     }
 }

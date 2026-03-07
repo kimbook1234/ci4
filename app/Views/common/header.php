@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BOOKPEN</title>
+	<title>로컬 CodeIgniter4</title>
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 	<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css"/>
 	<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
@@ -35,12 +35,13 @@
 </head>
 <body>
 	<header>
-	    <div class="logo">로컬 CI4</div>
+	    <div class="logo">(로컬 CodeIgniter4)</div>
 	    <nav id="mainMenu" >
-		   <a href="/board/list?boardmaster=1"><button data-menu="dashboard" class="active">게사판</button></a>
-		   <!--<button data-menu="content">콘텐츠</button>
-		   <button data-menu="users">사용자</button>
-		   <button data-menu="settings">설정</button>-->
+			<?php if(!empty($boardMasterData) && is_array($boardMasterData)):?>
+				<?php foreach($boardMasterData as $bm): ?>
+					<a href="<?=  route_to('board.index') . '?boardmaster=' . $bm['id'] ?>"><button data-menu="dashboard" class="<?= (service('request')->getGet('boardmaster') == $bm['id']) ? 'active' : '' ?>"><?= esc($bm['boardname']) ?></button></a>
+				<?php endforeach ?>
+			<?php endif ?>
 	    </nav>
 	    
 	    <!-- 로그인 / 회원가입 버튼 영역 -->
@@ -49,26 +50,33 @@
             <?php if ($session->get('logged')): ?>
             <!--  로그인 상태-->
                 <button style="background: transparent;color: white; font-size: 16px;"><?= $session->get('nickname')?></button>
-                <a href="javascript:logout()"><button class="loginBtn">로그아웃</button></a><a href="/user/editForm"><button class="signupBtn">내 정보</button></a>
+                <a href="javascript:logout()"><button class="loginBtn">로그아웃</button></a><a href="<?= route_to('user.edit') ?>"><button class="signupBtn">내 정보</button></a>
             <?php else:?>
             <!--  로그아웃 상태-->
-                <a href="/user"><button class="loginBtn">로그인</button></a>
-                <a href="/user/joinForm"><button class="signupBtn">회원가입</button></a>
+                <a href="<?= route_to('user.index') ?>"><button class="loginBtn">로그인</button></a>
+                <a href="<?= route_to('user.create') ?>"><button class="signupBtn">회원가입</button></a>
             <?php endif; ?>
 	    </div>
 	</header>
-    <form method="post" action="/user/logout" name="logoutform">
-    <input type="hidden" name="nowpage" value="<?= current_url();?>">
+    <form method="post" action="<?= route_to('user.logout') ?>" name="logoutform">
+    	<input type="hidden" name="nowpage" value="<?= current_url();?>">
     </form>    
 
 	<div class="layout">
 		<aside id="leftQuick">
-			<!--<p>왼쪽 퀵메뉴 / 광고 영역</p>
-			<ul style="margin-top:10px; list-style:none; font-size:14px;">
-				<li><a href="#">메뉴1</a></li>
-				<li><a href="#">메뉴2</a></li>
-				<li><a href="#">메뉴3</a></li>
-			</ul>-->
+			<p style="font-size:16px;font-weight:bold;background-color:#4a5568; color:white; padding: 10px; border-radius: 4px;"><?= $boardname?></p>
+			<ul style="margin-top:10px; list-style:none; font-size:15px; padding-left:0; ">		
+			<?php if(!empty($boardtagData) && is_array($boardtagData)):?>
+				<?php foreach($boardtagData as $bt): ?>
+					<li style='padding: 5px 0'>
+						<a href='<?= route_to('board.index') . "?boardmaster=" . service('request')->getGet('boardmaster') . "&catetag=". urlencode($bt['tag'])?>' style='text-decoration:none; color:black;'>
+							<?= esc($bt['tag']) ?>
+						</a>
+					</li>
+				<?php endforeach ?>
+				<!--font-weight:bolder; color: red-->
+			<?php endif ?>
+
 		</aside>
 		<main>
 			<p>

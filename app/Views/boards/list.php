@@ -1,8 +1,10 @@
 <?= $this->include('common/header') ?>
+
     <div style="max-width:900px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:relative; z-index:1;">
+        <h2 style="margin-bottom:20px;"><?= $boardname?></h2>
         <!-- 검색창 -->
-        <form method="get" action="/board/list">
-        <input type="hidden" name="boardmaster" value="<?= $boardmaster ?>">
+        <form method="get" action="<?= route_to('board.index') ?>">
+        <input type="hidden" name="boardmaster" value="<?= service('request')->getGet('boardmaster') ?>">
         <div style="margin-bottom:15px; text-align:right;">
             <div style="position:relative; display:inline-block; width:100%; max-width:250px;">
                 <input name="search" type="text" placeholder="검색어 입력" style="width:100%; padding:8px 35px 8px 10px; border:1px solid #ccc; border-radius:20px; font-size:14px; box-sizing:border-box;" value="<?= esc($search) ?>">
@@ -21,11 +23,14 @@
             <?php if(!empty($rss) && is_array($rss)):?>
                 <?php foreach($rss as $rs): ?>
                 <tr>
-                    <td style="padding:7px 8px; text-align:left; font-size:16px; font-weight:500" colspan="2"><a href="/board/view/<?= $rs['id'] ?>?page=<?= $pager->getCurrentPage()?>&<?=$url?>"><?= esc($rs['title']) ?></a> 
+                    <td style="padding:7px 8px; text-align:left; font-size:16px; font-weight:500" colspan="2"><a href="<?= route_to('board.show', $rs['id']) . "?" . http_build_query($_GET) ?>"><?= esc($rs['title']) ?></a> 
                     <?php if($rs['cmcnt'] > 0): ?> 
                         &nbsp;<span style="color:red;font-size:13px">(<?= $rs['cmcnt']?>)</span>
                     <?php endif ?>
                 </td>
+                <tr>
+                    <td style="padding:3px 8px; text-align:left; font-size:12px; font-weight:500; color: #316cf9;" colspan="2">#<?= $rs['tag']?></td>
+                </tr>	
                 </tr>
                 <tr style="border-bottom:1px solid #eee;">
                     <td style="padding:7px 8px; text-align:left; display:flex; align-items:center; gap:5px;">
@@ -46,7 +51,12 @@
         <div style="text-align:right;">
             <?php $session = session(); ?>
             <?php if ($session->get('logged')): ?>
-                <a href="/board/writeForm"><button class="primaryBtn">작성하기</button></a>
+                <?php
+                # $_GET 에서 search 파라미터는 제거
+                $get_param = $_GET;
+                unset($get_param['search']);
+                ?>
+                <a href="<?=  route_to('board.create') . '?'. http_build_query($get_param) ?>"><button class="primaryBtn">작성하기</button></a>
             <?php endif; ?>
         </div>
     </div>

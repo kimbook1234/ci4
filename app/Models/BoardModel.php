@@ -54,10 +54,10 @@ class BoardModel extends Model
     }
 
     #게시판 리스트
-    public function getBoards_list($boardmaster = 1, $limit = 10, $search = null)
+    public function getBoards_list($boardmaster = 1, $limit = 10, $search = null, $catetag = null)
     {
         $sql = $this->select('
-                            boards.id, boards.title, boards.viewcount, boards.inputdate
+                            boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate
                             , u.nickname
                             , COUNT(DISTINCT b.id) as cmcnt
                             , COUNT(c.id) AS upcnt
@@ -69,12 +69,15 @@ class BoardModel extends Model
                     ->join('board_dcnts d', 'boards.id = d.board', 'left')
                     ->where("boards.boardmaster", $boardmaster);
                     if (!empty($search)) {
-                    $sql->groupStart()
-                            ->like('boards.title', $search)
-                            ->orLike('boards.contents', $search)
-                        ->groupEnd();
+                        $sql->groupStart()
+                                ->like('boards.title', $search)
+                                ->orLike('boards.contents', $search)
+                            ->groupEnd();
                     }
-                    $sql->groupBy('boards.id, boards.title, boards.viewcount, boards.inputdate, u.nickname')
+                    if(!empty($catetag)) 
+                        $sql->where('tag', $catetag);
+
+                    $sql->groupBy('boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate, u.nickname')
                         ->orderBy('boards.id', 'DESC');
         return $sql->paginate($limit);
     }
@@ -119,7 +122,7 @@ class BoardModel extends Model
         $data = [
             'title'         => $postdata['title'],
             'contents'      => $postdata['contents'], 
-            'tag'           => $postdata['tag'] ?? null,
+            'tag'           => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null,
             'users'         => $session->get('uid'), 
             'boardmaster'   => $boardmaster,
         ];
@@ -128,9 +131,17 @@ class BoardModel extends Model
 
     public function boards_update(array $postdata, $id)
     {
-        return $this->set([ 'title' => $postdata['title'], 'contents' => $postdata['contents'], 'tag' => $postdata['tag'] ])
+        return $this->set([ 'title' => $postdata['title'], 'contents' => $postdata['contents'], 'tag' => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null ])
                     ->where('id', $id)
                     ->update();    
+    }
+
+    public function getBoard_categories($boardmaster)
+    {
+        return $this->select('DISTINCT UPPER(tag) as tag')
+                    ->where("tag IS NOT NULL AND tag != ''")
+                    ->where('boardmaster', $boardmaster)
+                    ->findAll();
     }
 
 }

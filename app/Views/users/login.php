@@ -83,7 +83,7 @@
   <div class="login-container">
     <h1>로그인</h1>
 <?//php echo password_hash('1942kk2', PASSWORD_DEFAULT);?>
-    <form method="post" action="/user/login" name="logform" Onsubmit="return loginf()">
+    <form method="post" action="<?= route_to("user.login") ?>?>" name="logform" Onsubmit="return loginf()">
     <?= csrf_field() ?>
       <input type="hidden" name="referpage" value="<?= previous_url()?>">
       <input type="text" placeholder="아이디" name="userid" id="userid_id" onkeyup="chkInputValue(this)">

@@ -95,8 +95,9 @@
 <body>
 	<div class="signup-container">
 		<h1>내 정보수정</h1>
-		<form method="post" action="/user/editPro" name="joinform" Onsubmit="return joinf()">
+		<form method="post" action="<?= route_to("user.update") ?>" name="joinform" Onsubmit="return joinf()">
 		<?= csrf_field() ?>
+		<input type="hidden" name="_method" value="PUT">		
 		<input type="hidden" name="id" value="<?= $rs['id'] ?>">
 		<input type="hidden" name="userid" value="<?= $rs['userid'] ?>">
 

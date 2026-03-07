@@ -35,7 +35,7 @@ class User extends BaseController
             if($referpage && !str_contains($referpage, '/user') ){
                 return redirect()->to($referpage);
             }else{
-                return redirect()->to('/board/list');
+                return redirect()->to(route_to('board.index'));
             }
             
         } else {
@@ -54,24 +54,24 @@ class User extends BaseController
         if($nowpage) {
             return redirect()->to($nowpage);            
         }else{
-            return redirect()->to("/board/list");
+            return redirect()->to(route_to('home'));
         }
     }
 
-    public function joinForm()
+    public function create()
     {
-        return view('/users/joinForm');
+        return view('/users/create');
     }
 
-    public function editForm()
+    public function edit()
     {
         $userModel = new UserModel();
         $data['rs'] = $userModel->getUser();
 
-        return view('/users/editForm', $data);
+        return view('/users/edit', $data);
     }
 
-    public function joinPro()
+    public function store()
 	{
         $session   = session();
 		$userModel = new UserModel();
@@ -113,10 +113,10 @@ class User extends BaseController
             'useterms'          => $useterms,
             'infopolicy'        => $infopolicy,
         ]);
-        return redirect()->to('/user');
+        return redirect()->to(route_to('user.index'));
 	}
 
-    public function editPro()
+    public function update()
 	{
         #$session   = session();
 		$userModel = new UserModel();
@@ -147,6 +147,6 @@ class User extends BaseController
                     ->where('userid', $userid)                    
                     ->update();   
 
-        return redirect()->to('/user/editForm');
+        return redirect()->to(route_to('user.edit'));
     }
 }

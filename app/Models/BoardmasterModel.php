@@ -43,4 +43,11 @@ class BoardmasterModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    public function getBoardmasters($id = null)
+    {
+        return $id ? $this->select("boardname")->find($id) 
+                    : $this->findAll();
+    }
 }

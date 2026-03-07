@@ -1,4 +1,5 @@
 <?= $this->include('common/header') ?>
+
 <?php 
 $session = session(); 
 if (!$session->get('logged')) 
@@ -9,6 +10,7 @@ else
 <!-- 내용영역 -->
 <!-- 게시글 보기 페이지 컨테이너 -->
 <div style="max-width:900px; margin:20px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+	<h2 style="margin-bottom:20px;"><?= $boardname?></h2>
 	<!-- 작성 정보 -->
 	<div style="font-size:14px; color:#555; margin-bottom:20px;display:flex; align-items:center;gap:5px;">
 		<img src="/icon/1234.jpg" alt="프로필" style="width:30px; height:30px; border-radius:50%; object-fit:cover;"> 
@@ -22,30 +24,30 @@ else
 	</div>
 	<!-- 추천 / 비추천 -->
 	<div style="text-align:center; margin-bottom:20px;">
-		<button style="padding:8px 20px; margin-right:10px; background:#2d3748; color:white; border:none; border-radius:5px; cursor:pointer;" id="upcntbtn" data-val1="<?= $rs['id'] ?>" data-val2="u" > 추천 <span id="upcnt"><?= $rs['upcnt'] ?></span></button>
-		<button style="padding:8px 20px; margin-right:10px; background:#e53e3e; color:white; border:none; border-radius:5px; cursor:pointer;" id="downcntbtn" data-val1="<?= $rs['id'] ?>" data-val2="d"> 비추천 <span id="downcnt"><?= $rs['downcnt'] ?></span></button>
-
+		<img src="/icon/like.png" width="25" style="cursor:pointer; vertical-align:middle;" id="upcntbtn" data-val1="<?= $rs['id'] ?>" data-val2="u">&nbsp;<span id="upcnt"><?= $rs['upcnt'] ?></span>&nbsp;&nbsp;
+		<img src="/icon/dislike.png" width="25" style="cursor:pointer; vertical-align:middle;" id="downcntbtn" data-val1="<?= $rs['id'] ?>" data-val2="d">&nbsp;<span id="downcnt"><?= $rs['downcnt'] ?></span>
+		<p>
 		<?php if ($session->get('logged') && $rs["bookid"] !== null): ?>
 		<!-- 북마크 내역이 있다면 -->
-		<button style="padding:8px 20px; background:#e53e3e; color:white; border:none; border-radius:5px; cursor:pointer;" id="bookmark" data-val="<?= $rs['id'] ?>">북마크</button>
+		<img src='/icon/heart_red.png' width='25' style='cursor:pointer;' id='bookmark' data-val='<?= $rs['id'] ?>'>
 		<?php else:?>
 		<!-- 북마크 내역이 없다면 -->
-		<button style="padding:8px 20px; background:#ffffff; color:#330000; border:1px solid #330000; border-radius:5px; cursor:pointer;" id="bookmark" data-val="<?= $rs['id'] ?>">북마크</button>
+		<img src='/icon/heart.png' width='25' style='cursor:pointer;' id='bookmark' data-val='<?= $rs['id'] ?>'>
 		<?php endif; ?>
 	</div>
 	
-	<form method="POST" action="/board/delete?del=1&<?=$url?>" name="dform" id="dform">
+	<form method="POST" action="<?= route_to('board.destroy', $rs['id']) . "?" . http_build_query($_GET) ?>" name="dform" id="dform">
 	<?= csrf_field() ?>
-	<input type="hidden" name="id" value="<?= $rs['id'] ?>">
+	<input type="hidden" name="_method" value="DELETE">
 	<input type="hidden" name="users" value="<?= $rs['users'] ?>">
 	<div style="text-align:right;">
         <?php if ($session->get('userid') == $rs['userid']): ?>
-            <a href="/board/writeForm/<?= $rs['id']?>?<?=$url?>"><button type="button" class="primaryBtn" style="margin-right:5px">수 정</button></a>
+            <a href="<?= route_to('board.edit', $rs['id']) . "?" . http_build_query($_GET) ?>"><button type="button" class="primaryBtn" style="margin-right:5px">수 정</button></a>
             <?php if ($rs['cmcnt'] == 0): ?>
-            <button type="submit" class="primaryBtn" style="background:#e53e3e; color:white;">삭 제</button>
+            <button type="submit" class="primaryBtn">삭 제</button>
 			<?php endif; ?>
         <?php endif; ?>
-		<a href="/board/list?<?=$url?>"><button type="button" class="primaryBtn">← 목록으로</button></a>
+		<a href="<?= route_to("board.index") . "?" . http_build_query($_GET) ?>"><button type="button" class="primaryBtn">← 목록으로</button></a>
 	</div>
 	</form>
 	<?php if (session()->getFlashdata('error')): ?>
@@ -57,7 +59,7 @@ else
 <div style="max-width:900px; margin:20px auto; background:#f7fafc; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); ">
 	<h3 style="margin-bottom:10px;">댓글 <?= $rs['cmcnt']?> 개</h3>
 	<!-- 댓글 입력폼 (맨 위) -->
-	<form method="post" action="/boardcmts/write?<?=$url?>" id="cmform" class="cmform">
+	<form method="post" action="/boardcmts/write" id="cmform" class="cmform">
 	<?= csrf_field() ?>
 	<input type="hidden" value="<?= $rs['id'] ?>" name="board">
 	<div style="margin-bottom:20px;">
@@ -83,7 +85,7 @@ else
 					$usermargin = "";
                 }
             ?>
-		<form method="post" action="/boardcmts/write?<?=$url?>" id="cmform<?= $crs['id'] ?>" class="cmform">
+		<form method="post" action="/boardcmts/write?<?= http_build_query($_GET)?>" id="cmform<?= $crs['id'] ?>" class="cmform">
 		<?= csrf_field() ?>
 		<input type="hidden" name="board" value="<?= $rs['id'] ?>" > <!-- 상세페이지 원게시글의 id -->
 		<input type="hidden" name="gid" value="<?= $crs['gid'] ?>" >
@@ -101,8 +103,6 @@ else
 			<?php endif; ?>
 			| <?= esc($crs['comminputdate']) ?></div>
 			<div style="text-align:right; font-size:13px; <?= $remargin2?>">
-				<span style="cursor:pointer; margin-right:10px;">👍 0</span>
-				<span style="cursor:pointer;">👎 0</span>
 			</div>
 			<div style="<?= $usermargin?>">
 				<?php if ($session->get('logged')): ?>
@@ -126,6 +126,7 @@ else
     <?php endif ?>
 	</div>
 </div>
+
 <?= $this->include('common/footer') ?>
 <script type="text/javascript">
 <!--
@@ -201,17 +202,9 @@ $(function() {
 				return;
 			}else {//성공
 				if(json.mode == "add") { //북마크 됨
-					$("#bookmark").css({ 
-							"backgroundColor": "#e53e3e", 
-							"color": "white",
-							"border": "none"
-					});
+					$("#bookmark").attr("src", "/icon/heart_red.png");
 				}else if(json.mode == "del") { //북마크 해제됨
-					$("#bookmark").css({ 
-							"backgroundColor": "#ffffff", 
-							"color": "#330000",
-							"border": "1px solid #330000"
-					});
+					$("#bookmark").attr("src", "/icon/heart.png");
 				}else{
 					alert("예외 발생");
 				}

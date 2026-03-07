@@ -95,9 +95,8 @@
 <body>
 	<div class="signup-container">
 		<h1>회원가입</h1>
-		<form method="post" action="/user/joinPro" name="joinform" Onsubmit="return joinf()">
+		<form method="post" action="<?= route_to("user.store") ?>" name="joinform" Onsubmit="return joinf()">
 		<?= csrf_field() ?>			
-
 		<input type="text" placeholder="아이디" name="userid" id="userid_id" onkeyup="chkInputValue(this)" pattern="[A-Za-z0-9]*" >
 		<input type="password" placeholder="비밀번호" name="password" id="password_id" onkeyup="chkInputValue(this)">
 		<!-- <input type="password" placeholder="비밀번호 확인" required> -->
