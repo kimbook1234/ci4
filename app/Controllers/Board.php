@@ -42,6 +42,7 @@ class Board extends BaseController
         $data['boardMasterData'] = $this->boardMasterData; #게시판 마스터 데이터
         $data['boardname'] = $this->boardname;  #게시판 이름
         $data['boardtagData'] = $this->boardtagData; #게시판 태그 데이터
+        $data['boardmaster'] = $this->boardmaster; #게시판 코드
         return view('/boards/list', $data);  #'parser' => true 옵션은 view에서 파서 문법 사용하기 위함
     }
 
@@ -74,6 +75,7 @@ class Board extends BaseController
             'boardMasterData' => $this->boardMasterData, #게시판 마스터 데이터
             'boardname' => $this->boardname, #게시판 이름
             'boardtagData' => $this->boardtagData, #게시판 태그 데이터
+            'boardmaster' => $this->boardmaster,
         ]);
     }
 
@@ -83,6 +85,7 @@ class Board extends BaseController
             'boardMasterData' => $this->boardMasterData, #게시판 마스터 데이터
             'boardname' => $this->boardname, #게시판 이름
             'boardtagData' => $this->boardtagData, #게시판 태그 데이터
+            'boardmaster' => $this->boardmaster,            
         ]); 
     }
 
@@ -96,6 +99,7 @@ class Board extends BaseController
             'boardMasterData' => $this->boardMasterData,
             'boardname' => $this->boardname, #게시판 이름      
             'boardtagData' => $this->boardtagData, #게시판 태그 데이터
+            'boardmaster' => $this->boardmaster,            
         ];
 
         if (isset($data['rs']['contents']))

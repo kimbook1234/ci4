@@ -35,11 +35,11 @@
 </head>
 <body>
 	<header>
-	    <div class="logo">(로컬 CodeIgniter4)</div>
+	    <div class="logo"><a href="<?= route_to('board.index') ?>" style="color: #887979; text-decoration: none">KIM J-W <br><font style="font-size:17px">(로컬 CodeIgniter4)</font></a></div>
 	    <nav id="mainMenu" >
 			<?php if(!empty($boardMasterData) && is_array($boardMasterData)):?>
 				<?php foreach($boardMasterData as $bm): ?>
-					<a href="<?=  route_to('board.index') . '?boardmaster=' . $bm['id'] ?>"><button data-menu="dashboard" class="<?= (service('request')->getGet('boardmaster') == $bm['id']) ? 'active' : '' ?>"><?= esc($bm['boardname']) ?></button></a>
+					<a href="<?=  route_to('board.index') . '?boardmaster=' . $bm['id'] ?>"><button data-menu="dashboard" class="<?= ($boardmaster == $bm['id']) ? 'active' : '' ?>"><?= esc($bm['boardname']) ?></button></a>
 				<?php endforeach ?>
 			<?php endif ?>
 	    </nav>
