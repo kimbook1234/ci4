@@ -49,7 +49,7 @@
             <?php $session = session(); ?>
             <?php if ($session->get('logged')): ?>
             <!--  로그인 상태-->
-                <button style="background: transparent;color: white; font-size: 16px;"><?= $session->get('nickname')?></button>
+                <button style="background: transparent;color: #887979; font-size: 16px;"><?= $session->get('nickname')?></button>
                 <a href="javascript:logout()"><button class="loginBtn">로그아웃</button></a><a href="<?= route_to('user.edit') ?>"><button class="signupBtn">내 정보</button></a>
             <?php else:?>
             <!--  로그아웃 상태-->

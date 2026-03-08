@@ -18,6 +18,14 @@
         <label for="postTitle" style="display:block; margin-bottom:5px; font-weight:500;">제목</label>
         <input type="text"  name="title" id="title" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:14px; box-sizing:border-box;">
     </div>
+	<?php 
+	$session = session(); 
+	if ($session->get('logged') && $session->get('isstaff')): 
+	?>
+	<div style='margin-bottom:15px;'><label><input type='checkbox' name='notice' id="notice" value='1'> 공지글</label></div>
+	<?php 
+	endif	
+	?>
     <div style="margin-bottom:15px;">
         <label for="postTags" style="display:block; margin-bottom:5px; font-weight:500;">태그(카테고리)</label>
         <input type="text" name="tag" id="tag" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:14px; box-sizing:border-box;">
@@ -40,7 +48,8 @@
     <div style="text-align:right;">
         <button type="submit" class="primaryBtn">작성</button>
     </div>
-	<div id="writemsgbox" style="color:red;font-size:13px; height:25px; margin-top:5px;"></div>
+	<div id="writemsgbox" style="color:red;font-size:13px; height:25px; margin-top:5px;">
+	</div>
 </div>
 <form>
 <?= $this->include('common/footer') ?>

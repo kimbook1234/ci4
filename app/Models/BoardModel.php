@@ -11,7 +11,7 @@ class BoardModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['title', 'contents', 'tag', 'viewcount', 'users', 'boardmaster'];
+    protected $allowedFields    = ['title', 'contents', 'tag', 'notice', 'viewcount', 'users', 'boardmaster'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -57,7 +57,7 @@ class BoardModel extends Model
     public function getBoards_list($boardmaster = 1, $limit = 10, $search = null, $catetag = null)
     {
         $sql = $this->select('
-                            boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate
+                            boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate, boards.notice
                             , u.nickname
                             , COUNT(DISTINCT b.id) as cmcnt
                             , COUNT(c.id) AS upcnt
@@ -77,7 +77,8 @@ class BoardModel extends Model
                     if(!empty($catetag)) 
                         $sql->where('tag', $catetag);
 
-                    $sql->groupBy('boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate, u.nickname')
+                    $sql->groupBy('boards.id, boards.title, boards.tag, boards.viewcount, boards.inputdate, boards.notice, u.nickname')
+                        ->orderBy('boards.notice', 'DESC')                  
                         ->orderBy('boards.id', 'DESC');
         return $sql->paginate($limit);
     }
@@ -109,7 +110,7 @@ class BoardModel extends Model
     #게시판 수정 데이터 불러오기
     public function getBoards_update($id)
     {
-        return $this->select('id, title, tag, contents, users')
+        return $this->select('id, title, tag, contents, notice, users')
                     ->where('boards.id', $id)
                     ->first();
     }
@@ -123,6 +124,7 @@ class BoardModel extends Model
             'title'         => $postdata['title'],
             'contents'      => $postdata['contents'], 
             'tag'           => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null,
+            'notice'        => $postdata['notice'] == "1" ? 1 : 0,
             'users'         => $session->get('uid'), 
             'boardmaster'   => $boardmaster,
         ];
@@ -131,7 +133,14 @@ class BoardModel extends Model
 
     public function boards_update(array $postdata, $id)
     {
-        return $this->set([ 'title' => $postdata['title'], 'contents' => $postdata['contents'], 'tag' => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null ])
+        #print($postdata['notice']);
+        #exit;
+        return $this->set([ 
+            'title'     => $postdata['title'], 
+            'contents'  => $postdata['contents'], 
+            'tag'       => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null, 
+            'notice'    => $postdata['notice'] == "1" ? 1 : 0,
+        ])
                     ->where('id', $id)
                     ->update();    
     }

@@ -176,6 +176,9 @@ class Board extends BaseController
 
         $data = $this->request->getPost();
 
+        #print_r($this->request->getPost());
+        #exit;
+
         $db->transBegin();  #트랜잭션 시작
         try {          
             $boardModel->boards_update($data, $id);

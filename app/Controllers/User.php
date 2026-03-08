@@ -29,6 +29,7 @@ class User extends BaseController
                 'uid'       => $rs['id'],
                 'userid'    => $rs['userid'],                                
                 'nickname'  => $rs['nickname'],
+                'isstaff'   => $rs['isstaff'],
                 'logged'    => true,
             ]);
 

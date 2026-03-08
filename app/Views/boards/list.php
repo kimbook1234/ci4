@@ -22,22 +22,24 @@
             <tbody>
             <?php if(!empty($rss) && is_array($rss)):?>
                 <?php foreach($rss as $rs): ?>
-                <tr>
-                    <td style="padding:7px 8px; text-align:left; font-size:16px; font-weight:500" colspan="2"><a href="<?= route_to('board.show', $rs['id']) . "?" . http_build_query($_GET) ?>"><?= esc($rs['title']) ?></a> 
-                    <?php if($rs['cmcnt'] > 0): ?> 
-                        &nbsp;<span style="color:red;font-size:13px">(<?= $rs['cmcnt']?>)</span>
-                    <?php endif ?>
+                <tr<?= ($rs['notice'] == 1) ? " style='background-color: #f4effe'" : "" ?>>
+                    <td style="padding:7px 8px; text-align:left; font-size:16px; font-weight:<?= ($rs['notice'] == 1) ? "700" : "500" ?>" colspan="2"><a href="<?= route_to('board.show', $rs['id']) . "?" . http_build_query($_GET) ?>">
+                        <?= ($rs['notice'] == 1) ? "<font color='#ee6b33'>[중요]</font>" : "" ?>
+                        <?= esc($rs['title']) ?></a> 
+                        <?php if($rs['cmcnt'] > 0): ?> 
+                            &nbsp;<span style="color:red;font-size:13px">(<?= $rs['cmcnt']?>)</span>
+                        <?php endif ?>
                 </td>
-                <tr>
+                <tr<?= ($rs['notice'] == 1) ? " style='background-color: #f4effe'" : "" ?>>
                     <td style="padding:3px 8px; text-align:left; font-size:12px; font-weight:500; color: #316cf9;" colspan="2">#<?= $rs['tag']?></td>
                 </tr>	
                 </tr>
-                <tr style="border-bottom:1px solid #eee;">
+                <tr style="border-bottom:1px solid #eee;<?= ($rs['notice'] == 1) ? "background-color: #f4effe" : "" ?>">
                     <td style="padding:7px 8px; text-align:left; display:flex; align-items:center; gap:5px;">
                         <!-- <img src="/icon/1234.jpg" alt="프로필" style="width:25px; height:25px; border-radius:50%; object-fit:cover;"> -->
-                        <span style="color:#636363;font-weight:300"><?= esc($rs['nickname']) ?> · <?= $rs['inputdate'] ?> · 조회수 <?= $rs['viewcount'] ?></span>
+                        <span style="color:#636363;font-weight:300"><?= esc($rs['nickname']) ?></span>
                     </td>
-                    <td style="padding:7px 8px; text-align:right; width:300px">추천 <?= $rs['upcnt']?>&nbsp;&nbsp;&nbsp;비추천 <?= $rs['downcnt']?></td>
+                    <td style="padding:7px 8px; text-align:right; width:300px">조회수 <?= $rs['viewcount'] ?> &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp; <?= date('Y/m/d H:i', strtotime($rs['inputdate'])) ?></td>
                 </tr>
                 <?php endforeach ?>
             <?php endif ?>
