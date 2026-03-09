@@ -49,6 +49,9 @@
         <button type="submit" class="primaryBtn">작성</button>
     </div>
 	<div id="writemsgbox" style="color:red;font-size:13px; height:25px; margin-top:5px;">
+	<?php if (session()->getFlashdata('error')): ?>
+		<?= session()->getFlashdata('error') ?>
+	<?php endif; ?>		
 	</div>
 </div>
 <form>

@@ -119,12 +119,11 @@ class BoardModel extends Model
     public function boards_insert(array $postdata, $boardmaster)
     {
         $session   = session();
-
         $data = [
             'title'         => $postdata['title'],
             'contents'      => $postdata['contents'], 
             'tag'           => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null,
-            'notice'        => $postdata['notice'] == "1" ? 1 : 0,
+            'notice'        => isset($postdata['notice']) ? $postdata['notice'] : 0, #checkbox의 경우 체크하지 않으면 아이에 POST로 넘어오는 변수 자체가 존재하지 않는다. 
             'users'         => $session->get('uid'), 
             'boardmaster'   => $boardmaster,
         ];
@@ -139,7 +138,7 @@ class BoardModel extends Model
             'title'     => $postdata['title'], 
             'contents'  => $postdata['contents'], 
             'tag'       => $postdata['tag'] ? strtoupper(trim($postdata['tag'])) : null, 
-            'notice'    => $postdata['notice'] == "1" ? 1 : 0,
+            'notice'    => isset($postdata['notice']) ? $postdata['notice'] : 0,
         ])
                     ->where('id', $id)
                     ->update();    
