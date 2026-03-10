@@ -110,7 +110,7 @@ class User extends BaseController
             'name'              => $uname,
             'nickname'          => $nickname,
             'email'             => $email,
-            'mailreceive'       => $mailreceive,
+            'mailreceive'       => isset($mailreceive) ? $mailreceive : 0,
             'useterms'          => $useterms,
             'infopolicy'        => $infopolicy,
         ]);
