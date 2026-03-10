@@ -33,11 +33,11 @@ class User extends BaseController
                 'logged'    => true,
             ]);
 
-            if($referpage && !str_contains($referpage, '/user') ){
-                return redirect()->to($referpage);
-            }else{
+            #if($referpage && !str_contains($referpage, '/user') ){
+             #   return redirect()->to($referpage);
+            #}else{
                 return redirect()->to(route_to('board.index'));
-            }
+            #}
             
         } else {
             // 로그인 실패
@@ -114,7 +114,7 @@ class User extends BaseController
             'useterms'          => $useterms,
             'infopolicy'        => $infopolicy,
         ]);
-        return redirect()->to(route_to('user.index'));
+        return redirect()->to(route_to('home'));
 	}
 
     public function update()
