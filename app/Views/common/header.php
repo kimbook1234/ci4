@@ -34,7 +34,6 @@
 	</style>
 </head>
 <body>
-	<?=  base_url('/')?>
 	<header>
 	    <div class="logo"><a href="<?= route_to('board.index') ?>" style="color: #887979; text-decoration: none">KIM J-W <br><font style="font-size:17px">(로컬 CodeIgniter4)</font></a></div>
 	    <nav id="mainMenu" >
