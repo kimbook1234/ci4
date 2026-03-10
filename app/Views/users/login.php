@@ -92,7 +92,7 @@
     </form>
     <div class="login-links">
       <a href="#">아이디/비밀번호 찾기</a>
-      <a href="/user/joinForm">회원가입</a>
+      <a href="<?= route_to("user.create") ?>">회원가입</a>
     </div>
     <div id="msgbox" style="color:red; font-size:13px; height: 25px; margin-top: 5px;">&nbsp;
 	<?php if (session()->getFlashdata('error')): ?>

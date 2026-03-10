@@ -111,7 +111,7 @@
 		<button type="submit">회원가입</button>
 		</form>
 		<div class="login-link">
-		이미 계정이 있으신가요? <a href="/user">로그인</a>
+		이미 계정이 있으신가요? <a href="<?= route_to("user.index") ?>">로그인</a>
 		</div>
 		<div id="msgbox" style="color:red; font-size:13px; height:25px; margin-top:5px;">&nbsp;</div>
 		<div id="msgbox" style="color:red; font-size:13px; height:25px; margin-top:5px;">&nbsp;
