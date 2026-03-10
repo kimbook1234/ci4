@@ -9,4 +9,5 @@ composer.lock
 !writable/debugbar/index.html
 
 .gitignore
+.env
 app/Config/App.php
