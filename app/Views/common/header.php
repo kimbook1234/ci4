@@ -35,7 +35,7 @@
 </head>
 <body>
 	<header>
-	    <div class="logo"><a href="<?= route_to('board.index') ?>" style="color: #887979; text-decoration: none">KIM J-W <br><font style="font-size:17px">(로컬 CodeIgniter4)</font></a></div>
+	    <div class="logo"><a href="<?= route_to('board.index') ?>" style="color: #887979; text-decoration: none">KIM J-W <br><font style="font-size:17px">(CodeIgniter4)</font></a></div>
 	    <nav id="mainMenu" >
 			<?php if(!empty($boardMasterData) && is_array($boardMasterData)):?>
 				<?php foreach($boardMasterData as $bm): ?>
