@@ -64,7 +64,7 @@ class BoardModel extends Model
                             , COUNT(d.id) AS downcnt
                             ')
                     ->join('users u', 'boards.users = u.id')
-                    ->join('boardCmts b', 'boards.id = b.board', 'left')
+                    ->join('boardcmts b', 'boards.id = b.board', 'left')
                     ->join('board_ucnts c', 'boards.id = c.board', 'left')
                     ->join('board_dcnts d', 'boards.id = d.board', 'left')
                     ->where("boards.boardmaster", $boardmaster);
@@ -93,7 +93,7 @@ class BoardModel extends Model
                             , COUNT(DISTINCT d.id) AS downcnt
                             ')
                     ->join('users u', 'boards.users = u.id') // boards.users = 회원 id
-                    ->join('boardCmts b', 'boards.id = b.board', 'left')
+                    ->join('boardcmts b', 'boards.id = b.board', 'left')
                     ->join('board_ucnts c', 'boards.id = c.board', 'left')
                     ->join('board_dcnts d', 'boards.id = d.board', 'left')  
                     ->join('board_bmks bk', 
