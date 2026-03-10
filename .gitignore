@@ -8,4 +8,4 @@ composer.lock
 
 !writable/debugbar/index.html
 
-/app/Config/App.php
+app/Config/App.php
