@@ -7,3 +7,5 @@ composer.lock
 /writable/debugbar/*
 
 !writable/debugbar/index.html
+
+/app/Config/App.php
