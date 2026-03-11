@@ -19,7 +19,7 @@ class User extends BaseController
 
         $userid = $this->request->getPost('userid');
         $password = $this->request->getPost('password');
-        $referpage = $this->request->getPost('referpage');    //로그인폼의 이전 페이지    
+        #$referpage = $this->request->getPost('referpage');    //로그인폼의 이전 페이지    
 
         $rs = $userModel->where('userid', $userid)->first();
 

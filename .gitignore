@@ -11,3 +11,4 @@ composer.lock
 .gitignore
 .env
 app/Config/App.php
+public/upload
