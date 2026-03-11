@@ -59,7 +59,7 @@ else
 <div style="max-width:900px; margin:20px auto; background:#f7fafc; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); ">
 	<h3 style="margin-bottom:10px;">댓글 <?= $rs['cmcnt']?> 개</h3>
 	<!-- 댓글 입력폼 (맨 위) -->
-	<form method="post" action="/boardcmts/write" id="cmform" class="cmform">
+	<form method="post" action="<?= route_to("boardcmt.store")?>" id="cmform" class="cmform">
 	<?= csrf_field() ?>
 	<input type="hidden" value="<?= $rs['id'] ?>" name="board">
 	<div style="margin-bottom:20px;">
@@ -85,7 +85,7 @@ else
 					$usermargin = "";
                 }
             ?>
-		<form method="post" action="/boardcmts/write?<?= http_build_query($_GET)?>" id="cmform<?= $crs['id'] ?>" class="cmform">
+		<form method="post" action="<?= route_to("boardcmt.store") . "?" . http_build_query($_GET)?>" id="cmform<?= $crs['id'] ?>" class="cmform">
 		<?= csrf_field() ?>
 		<input type="hidden" name="board" value="<?= $rs['id'] ?>" > <!-- 상세페이지 원게시글의 id -->
 		<input type="hidden" name="gid" value="<?= $crs['gid'] ?>" >

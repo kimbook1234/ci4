@@ -37,4 +37,4 @@ $routes->get('/json/recommend', 'Json::recommend');                 #게시판 �
 $routes->get('/json/bookmark', 'Json::bookmark');                   #게시판 추천/비추천 json
 
 #댓글 처리
-$routes->post('/boardcmts/write','Boardcmts::writePro', ['filter' => 'csrf']);            #댓글 쓰기
+$routes->post('/boardcmt/store','Boardcmt::store', ['as' => 'boardcmt.store', 'filter' => 'csrf']);            #댓글 쓰기

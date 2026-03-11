@@ -6,7 +6,7 @@ use App\Models\BoardcmtModel;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Boardcmts extends BaseController
+class Boardcmt extends BaseController
 {
     protected $url;
 
@@ -15,7 +15,7 @@ class Boardcmts extends BaseController
         //
     }
 
-    public function writePro()
+    public function store()
     {
         $session   = session();
         $boardcmtModel = new BoardcmtModel();
@@ -95,7 +95,7 @@ class Boardcmts extends BaseController
                 }
             }
             $db->transCommit(); #커밋
-            return redirect()->to('/board/view/' . $board . '?' . $this->url);
+            return redirect()->to(route_to("board.show",  $board) . "?" . http_build_query($this->request->getGet()));
 
         } catch (\Exception $e) {
             $db->transRollback(); #롤백     

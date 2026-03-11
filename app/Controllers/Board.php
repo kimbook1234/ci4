@@ -144,7 +144,7 @@ class Board extends BaseController
             }
 
             $db->transCommit(); #커밋
-            return redirect()->to(route_to('board.index') . "?" . http_build_query($_GET));
+            return redirect()->to(route_to('board.index') . "?" . http_build_query($this->request->getGet()));
 
         } catch (\Exception $e) {
             $db->transRollback(); #롤백
@@ -226,7 +226,7 @@ class Board extends BaseController
             }
             $db->transCommit(); #커밋
             
-            return redirect()->to(route_to('board.show', $id) . '?' . http_build_query($_GET));
+            return redirect()->to(route_to('board.show', $id) . '?' . http_build_query($this->request->getGet()));
 
         } catch (\Exception $e) {
             $db->transRollback(); #롤백
@@ -266,7 +266,7 @@ class Board extends BaseController
                 $boardModel->where('id', $id)->delete();
                 $db->transCommit(); #커밋
 
-                return redirect()->to(route_to('board.index') . '?' . http_build_query($_GET));
+                return redirect()->to(route_to('board.index') . '?' . http_build_query($this->request->getGet()));
             } catch (\Exception $e) {
                 $db->transRollback(); #롤백
                 $session->setFlashdata('error', '삭제중 오류발생: ' . $e->getMessage());
