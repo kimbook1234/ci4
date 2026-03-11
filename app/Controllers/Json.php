@@ -2,9 +2,9 @@
 namespace App\Controllers;
 
 
-use App\Models\BoardUcntsModel;
-use App\Models\BoardDcntsModel;
-use App\Models\BoardBmksModel;
+use App\Models\BoarducntsModel;
+use App\Models\BoarddcntsModel;
+use App\Models\BoardbmksModel;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -88,8 +88,8 @@ class Json extends BaseController
         if (!$session->get('userid')) { //로그인 정보 없음
             return $this->response->setJSON(['errorflag' => 'u']);  
         }else{
-            $boardUcntsModel = new BoardUcntsModel();
-            $boardDcntsModel = new BoardDcntsModel();
+            $boardUcntsModel = new BoarducntsModel();
+            $boardDcntsModel = new BoarddcntsModel();
 
             $board = $id;
             $users = $session->get('uid');
@@ -123,7 +123,7 @@ class Json extends BaseController
         if (!$session->get('userid')) { #로그인 정보 없음
             return $this->response->setJSON(['errorflag' => 'u']);  
         }else{
-            $boardBmksModel = new BoardBmksModel();
+            $boardBmksModel = new BoardbmksModel();
             $data = $boardBmksModel->getBoardsBmks($id, $session->get('uid'));
 
             if($data) { #이미 북마크 된 경우 → 삭제

@@ -3,7 +3,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BoardCmtModel extends Model
+class BoardcmtModel extends Model
 {
     protected $table            = 'boardcmts';
     protected $primaryKey       = 'id';

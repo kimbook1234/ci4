@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\BoardCmtModel;
+use App\Models\BoardcmtModel;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -18,7 +18,7 @@ class Boardcmts extends BaseController
     public function writePro()
     {
         $session   = session();
-        $boardCmtModel = new BoardCmtModel();
+        $boardcmtModel = new BoardcmtModel();
 
         $id = $this->request->getPost('id');            #댓글 id
         $board = $this->request->getPost("board");      #원 게시물 id
@@ -49,7 +49,7 @@ class Boardcmts extends BaseController
                         orderno = 정렬순서 : 1
                         depth = 들여쓰기깊이 : 1
                     */
-                    $gid = $boardCmtModel->getMaxgid($board);   #최대 gid + 1
+                    $gid = $boardcmtModel->getMaxgid($board);   #최대 gid + 1
                     $orderno = 1;  
                     $depth = 1;
                 }else{          
@@ -64,17 +64,17 @@ class Boardcmts extends BaseController
                     */
                     $depth = $depth + 1;
                     if($orderno == 1) {
-                        $orderno = $boardCmtModel->getMaxorderno($board, $gid);
+                        $orderno = $boardcmtModel->getMaxorderno($board, $gid);
                     }else{
                         $orderno = $orderno + 1;
-                        $boardCmtModel->set('orderno', 'orderno + 1', false)    #세 번째 인자를 false로 하면, $value가 escape 처리(''를 붙이지) 않고 SQL 그대로 실행
+                        $boardcmtModel->set('orderno', 'orderno + 1', false)    #세 번째 인자를 false로 하면, $value가 escape 처리(''를 붙이지) 않고 SQL 그대로 실행
                                     ->where('board', $board)
                                     ->where('gid', $gid)
                                     ->where('orderno >=', $orderno)
                                     ->update();                    
                     }
                 }
-                $boardCmtModel->insert([
+                $boardcmtModel->insert([
                     'comment'   => $comment,
                     'gid'       => $gid,
                     'orderno'   => $orderno,
@@ -87,11 +87,11 @@ class Boardcmts extends BaseController
             #============================================                
             }else{
                 if(!$del) {  #삭제가 아니다 - 수정
-                    $boardCmtModel->set(['comment' => $comment])
+                    $boardcmtModel->set(['comment' => $comment])
                                 ->where('id', $id)
                                 ->update();   
                 }else{      #삭제
-                    $boardCmtModel->where('id', $id)->delete();
+                    $boardcmtModel->where('id', $id)->delete();
                 }
             }
             $db->transCommit(); #커밋

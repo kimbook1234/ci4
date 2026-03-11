@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BoardDcntsModel extends Model
+class BoarddcntsModel extends Model
 {
     protected $table            = 'board_dcnts';
     protected $primaryKey       = 'id';

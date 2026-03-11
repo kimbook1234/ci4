@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BoardBmksModel extends Model
+class BoardbmksModel extends Model
 {
     protected $table            = 'board_bmks';
     protected $primaryKey       = 'id';
