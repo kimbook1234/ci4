@@ -28,7 +28,7 @@ $routes->get('/board/create', 'Board::create', ['as' => 'board.create']);       
 $routes->post('/board', 'Board::store', ['as' => 'board.store', 'filter' => 'csrf']);                   #글쓰기처리    
 $routes->get('/board/(:num)/edit', 'Board::edit/$1', ['as' => 'board.edit']);                           #수정폼   
 $routes->put('/board/(:num)', 'Board::update/$1', ['as' => 'board.update', 'filter' => 'csrf']);        #수정처리   
-$routes->delete('/board/(:num)', 'Board::destroy/$1', ['as' => 'board.destroy', 'filter' => 'csrf']);   #삭제처리
+$routes->delete('/board/(:num)', 'Board::delete/$1', ['as' => 'board.delete', 'filter' => 'csrf']);   #삭제처리
 
 #json파일 처리
 $routes->post('/json/upload', 'Json::upload');                      #게시판 에디터 이미지 첨부 json, POST방식으로

@@ -236,7 +236,7 @@ class Board extends BaseController
     }
 
 
-    function destroy($id)
+    function delete($id)
     {
         $session = session();          
         $boardModel = new BoardModel();

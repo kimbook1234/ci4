@@ -36,7 +36,7 @@ else
 		<?php endif; ?>
 	</div>
 	
-	<form method="POST" action="<?= route_to('board.destroy', $rs['id']) . "?" . http_build_query($_GET) ?>" name="dform" id="dform">
+	<form method="POST" action="<?= route_to('board.delete', $rs['id']) . "?" . http_build_query($_GET) ?>" name="dform" id="dform">
 	<?= csrf_field() ?>
 	<input type="hidden" name="_method" value="DELETE">
 	<input type="hidden" name="users" value="<?= $rs['users'] ?>">
