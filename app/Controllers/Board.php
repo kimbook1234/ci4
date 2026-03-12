@@ -85,7 +85,7 @@ class Board extends BaseController
             'boardMasterData' => $this->boardMasterData, #게시판 마스터 데이터
             'boardname' => $this->boardname, #게시판 이름
             'boardtagData' => $this->boardtagData, #게시판 태그 데이터
-            'boardmaster' => $this->boardmaster,            
+            'boardmaster' => $this->boardmaster,
         ]); 
     }
 
